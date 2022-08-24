@@ -1,0 +1,62 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <a href="https://www.naver.com">
+      <div>네이버</div>
+    </a>
+
+    <!-- 
+        a 태그는 링크다 
+        style을 안씀
+        자식으로 스타일을 설정한다
+        href 속성은 이동할 주소다. (하이퍼링크)
+        href는 기본적으로 현재 주소를 기준으로 한다. <- 서버 들어가면 더 정확하고 자세하게 알게됨
+        다른 웹페이지로 이동하고 싶으면 주소를 href 속성으로 붙여 넣으면 된다.
+    -->
+    <a href="https://youtube.com" target="_blank">유튜브</a>
+    <!--
+         target 속성은 웹페이지를 어떻게 이동 할 지 정한다.
+         _blank 값을 설정하면 새탭으로 이동한다.
+         (설정 안하면 잇던게 바뀌고 설정을 해주면 새로 창을 만들어서 이동)  
+    -->
+    <video src="Beans - 127735.mp4" controls autoplay loop muted></video>
+    <!-- 
+        video 태그는 영상을 출력하게 사용한다.
+        src에 주소를 입력한다. << 주소라고 한 이유는 추후에 서버 공부 할때 다시 설명
+        현재 : 파일명을 입력한다(폴더 경로와 파일명을 입력)
+        controls 속성은 영상의 컨트롤 박스를 출력시켜준다.
+        autoplay 속성은 영상이 로드가 완료되면 바로 재생한다.
+        autoplay의 단점은 웹페이지를 들어갔을 때 오디오가 바로 나오면 안되는게 권장사항인데
+        바로 소리가 나오는 것이 단점이다. 
+        >> IOS는 이걸 정말 심하게 따져서 자동 재생이 안된다.
+        LOOP 속성은 반복이다.
+        muted 속성은 이름 그대로 음소거다. << IOS에서 중요.
+     -->
+    <!-- <video
+      src="https://www.youtube.com/watch?v=atRCO3W2fh0&t=49s"
+      controls
+    ></video>
+     유튜브 같은 경우는 소스코드 복사를 사용 해서 동영상을 붙여 넣는다.(비디오 태그를 쓸 필요가 없음) -->
+    <iframe
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/BGuCN3rqIow"
+      title="[#악마판사] 대국민 법정에서 장영남 공개처형한 김민정😈 소름돋는 연기력으로 뒷통수 거하게 친 지성X김민정의 완벽한 계략│#갓잡은클립 #샾잉"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <audio src="own-117683.mp3" autoplay></audio>
+    <!-- 
+        audio 태그는 음악을 재생하는 태그이다. 속성은 비디오 속성들과 같다.
+        태그의 속성은 이름만 넣을 경우 값을 true로 설정한다. < 나중에 배울 참 거짓 (true/false)의 값을 갖는 속성은 이름만으로 처리가 가능
+        이름만 넣을 수도 있는 속성들은 기본값이(설정 자체를 안 넣엇을때) 거짓(false)이다.
+    -->
+  </body>
+</html>
