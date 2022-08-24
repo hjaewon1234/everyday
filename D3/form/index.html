@@ -1,0 +1,178 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <!--
+            사용자가 입력하는 데이터를 서버에 보내는 태그
+            자세하게는 자바스크립트에서 할 예정
+            지금은 모양과 입력만
+            post, get .... 있음
+            table, ol, ul 처럼 form은 부모로서 사용
+            action 속성은 어디에다가 보낼 지 서버의 주소를 입력한다.
+            #은 권장사항이다. W3C에서 주소가 없을때 넣도록 권장한다.
+            method 속석은 데이터를 어떤 방식으로 보낼건지 설정을 한다. (get, post)
+            get은 주소의 입력 데이터가 나온다.
+            target << a랑 같다 (하이퍼 링크 해준다는뜻?)
+          -->
+      <fieldset>
+        <!-- 
+                사용하고싶으면 사용해라
+                fieldset 태그는 form 안에 영역을 구분해준다.
+                div 사용해도 된다.
+                style이 있어서 넣기만 해도 눈에 보인다.
+             -->
+        <legend>필드셋의 제목</legend>
+        <input type="text" id="text" name="easer" />
+        <!-- 
+            input 태그는 이름 그대로 사용자가 데이터를 입력하는 영역이다.
+            type이 다양하다.
+            text 값은 이름 그대로 문자를 적는 것이다.
+            name 속성은 서버에 보낼 때 어떤 이름을 가지고 있는지
+            데이터에 대한 이름을 같이 보낸다.
+            id 속성은 label 태그와 연결하기 위해 사용한다.
+
+         -->
+        <label for="text">아무거나 입력해보세요</label>
+        <!-- 
+            label 태그는 입력 값에 대한 제목을 사용자에게 보여준다.
+            ex) : 성명, 번호, 메일 etc...
+            for 속성은 input 태그와 연결하기 위해 사용한다.
+            클릭 시 연결된 input에 입력 할 수 있도록 해준다.
+
+         -->
+        <label for="pw">
+          비밀번호 : <input type="password" name="pw" id="pw" />
+        </label>
+        <!-- 
+            type 속성이 password 값을 가지는 input 태그는 타입그대로 비밀번호를 입력
+            할 수 있게 해준다.
+            입력된 데이터를 알아서 가려줌.
+         -->
+        <label for="tel">
+          전화번호 : <input type="tel" name="tel" id="tel"
+        /></label>
+        <!-- 
+            html로는 필터링이 안되기 때문에 자바스크립트로 필터링을 해준다.
+         -->
+        <div>
+          <label for="number"></label>
+          나이 : <input type="number" id="number" name="age" />
+        </div>
+        <div>
+          <!-- <label for="url">주소를 입력하세요.</label>
+          <input type="url" id="url" name="url" />
+        </div>
+        <div>
+          <label for="search">검색어를 입력하세요</label>
+          <input type="search" id="search" /> -->
+        </div>
+
+        <div>
+          <label for="email">이메일을 입력하세요</label>
+          <input type="email" id="email" />
+          <!-- 
+            이메일은 필터링이 잘 되어있음, 재대로 작성하지 않으면 받아주지 않음
+           -->
+        </div>
+        <div>
+          <label for="checkbox">동의하시겟습니까?</label>
+          <input type="checkbox" id="checkbox" />
+        </div>
+        <!-- 
+            checked 속성을 설정하면 체크된 상태로 출력된다.
+
+         -->
+        <div>
+          <input type="radio" id="radio" name="radio" />
+          <label for="radio1">사과</label>
+          <input type="radio" id="radio" name="radio" />
+          <label for="radio2">오렌지</label>
+          <input type="radio" id="radio" name="radio" />
+          <label for="radio3">바나나</label>
+          <input
+            style="width: 20px; height: 20px"
+            type="radio"
+            id="radio4"
+            name="radio1"
+          />
+          <label for="radio4">중복되는 과일</label>
+        </div>
+        <!-- 
+            하나만 선택하는 여러개의 체크박스
+            중복을 체크할때 name을 사용한다.
+
+         -->
+        <div>
+          <input type="text" id="text1" />
+          <!-- label의 for 속성과 input의 id속성이 같은 값을 가지면
+        위치와 상관 없이 label 클릭 시 input에 입력 할 수 있도록 커서가 이동된다. -->
+        </div>
+        <input type="file" />
+        <input
+          type="image"
+          src="https://play-lh.googleusercontent.com/8_0SDfkFXAFm12A7XEqkyChCdGC055J6fC8JR7qynNuO3qNOczIoNHo4U4lad8xYMJOL"
+          alt=""
+        />
+        <!-- 
+            이미지는 버튼을 이미지로 출력할 때 사용
+            이미지를 넣어서 버튼을 대체함.
+         -->
+        <button>
+          <img
+            src="https://play-lh.googleusercontent.com/8_0SDfkFXAFm12A7XEqkyChCdGC055J6fC8JR7qynNuO3qNOczIoNHo4U4lad8xYMJOL"
+            alt=""
+          />
+        </button>
+        <div>
+          <label for="birthday">생일은</label>
+          <input type="date" id="birthday" />
+        </div>
+        <div>
+          <input type="color" />
+        </div>
+        <button type="reset">입력값 초기화</button>
+
+        <textarea cols="30" rows="10"></textarea>
+        <!-- 
+            textarea는 여러줄을 입력 가능한 input text이다.
+         -->
+
+        <select>
+          <!-- select는 선택하는 입력값, 다만 한칸에 보여준다. -->
+          <option value="seoul">서울</option>
+          <option value="2">경기도</option>
+          <option value="c">인천</option>
+          <option value="3">강원도</option>
+          <!-- 
+            option은 선택할 메뉴들, value가 중요
+            value는 보낼 데이터이다.
+            option은 무조건 select의 자식으로 들어가야한다.
+         -->
+        </select>
+        <input type="text" placeholder="미입력시 출력되는 텍스트" />
+        <!-- autofocus 속성은 페이지 진입 시 자동으로 바로 입력 할 수 있게 커서를 넣어준다. -->
+        <!-- <div style="cursor: pointer">보내기</div> -->
+        <button type="submit">
+          <!-- 누르는것 말그대로 버튼 -->
+          <!-- 
+                a는 다른 웹페이지로 이동만 할 때 사용하고
+                button은 많은 용도로 사용된다
+                기본적으로 작동하는게 없어서 자바스크립트를 넣어야 하지만
+                a 처럼 무조건 작동하는 게 없어서 편함.
+                type은 어떠한 작동을 할 것인지 기본 작동을 설정함.
+                submit은 form 데이터를 보낼 때 사용
+             -->
+          보내기
+        </button>
+      </fieldset>
+    </form>
+    <div>
+      <label for="text1">클릭테스트</label>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="inde.css" />
+  </head>
+  <body>
+    <form action="#" method="get">
+      <div class="topbox">
+        <div class="questbox">
+          <div class="questtext">
+            경일 아카데미 수강 과정 및 교수 만족도 조사를 위한 설문지 입니다.<br />
+            경일 아카데미 수강하고 있는 수강생 본인 확인을 위해<br />
+            경일 아카데미 아이디와 비밀번호 및 전화번호를 적어주세요 <br />
+          </div>
+          <div class="answertext">
+            아이디 : <input class="barsize" type="email" name="email" /> <br />
+            비밀번호 :
+            <input class="barsize" type="password" name="pw" /><br />
+            전화번호 :
+            <input
+              class="barsize"
+              type="number"
+              name="number"
+              placeholder="번호는 - 없이 적어주세요"
+            />
+          </div>
+        </div>
+        <div class="questbox">
+          <div class="questtext">
+            본인이 수강 하고 있는 과정명 및 담당 교수님의 이름을 적어주세요.<br />
+          </div>
+          <div class="answertext">
+            수강 과목 :
+            <select class="barsize">
+              <option value="1">블록체인</option>
+              <option value="2">기초 c 언어</option>
+              <option value="3">자바스크립트</option>
+              <option value="4">게임프로그래밍</option>
+            </select>
+            담당 교수 : <input class="barsize" type="text" name="text" />
+          </div>
+        </div>
+        <div class="questbox">
+          <div class="questtext">수업 진행 속도는 어떠한가요<br /></div>
+          <div class="answertext">
+            <label for="speed1">매우느림</label>
+            <input type="radio" id="speed1" name="radio" />
+            <label for="speed2">느림</label>
+            <input type="radio" id="speed2" name="radio" />
+            <label for="speed3">적당함</label>
+            <input type="radio" id="speed3" name="radio" />
+            <label for="speed4">빠름</label>
+            <input type="radio" id="speed4" name="radio" />
+            <label for="spee5">매우빠름</label>
+            <input type="radio" id="spee5" name="radio" />
+            <!-- 
+                여기서 id가 따로 나뉘어져 있는데 name을 따로 설정해줘야 되는 이유는
+                중복으로 받지 않기위해 name이 필요하기때문
+                name의 값이 speed1 인것
+             -->
+          </div>
+        </div>
+        <div class="questbox">
+          <div class="questtext">수업의 난도는 어떻게 느껴지나요<br /></div>
+          <div class="answertext">
+            <label for="dif1">매우쉬움</label>
+            <input type="radio" id="dif1" name="radio1" />
+            <label for="dif2">쉬움</label>
+            <input type="radio" id="dif2" name="radio1" />
+            <label for="dif3">적당함</label>
+            <input type="radio" id="dif3" name="radio1" />
+            <label for="dif4">어려움</label>
+            <input type="radio" id="dif4" name="radio1" />
+            <label for="dif5">매우어려움</label>
+            <input type="radio" id="dif5" name="radio1" />
+          </div>
+        </div>
+        <div class="questbox">
+          <div class="questtext">수업 이후 과제의 양은 어떤가요<br /></div>
+          <div class="answertext">
+            <label for="hw1">매우 적음</label>
+            <input type="radio" id="hw1" name="radio2" />
+            <label for="hw2">적음</label>
+            <input type="radio" id="hw2" name="radio2" />
+            <label for="hw3">적당함</label>
+            <input type="radio" id="hw3" name="radio2" />
+            <label for="hw4">많음</label>
+            <input type="radio" id="hw4" name="radio2" />
+            <label for="hw5">매우 많음</label>
+            <input type="radio" id="hw5" name="radio2" />
+          </div>
+        </div>
+        <div class="questbox">
+          <div class="questtext">
+            과제를 수행 하는것에 있어서 어렵다고 생각되는 부분은
+            어떤것인가요(중복체크 가능)<br />
+          </div>
+          <div class="answertext">
+            <label for="homework1">과제의 양이 많다</label>
+            <input type="checkbox" id="homework1" /><br />
+            <label for="homework2"
+              >수업시간에 배운 내용과 관련이 없는 숙제라서</label
+            >
+            <input type="checkbox" id="homework2" /><br />
+            <label for="homework3"
+              >알고있는 내용이지만 활용하는 것이 어렵다</label
+            >
+            <input type="checkbox" id="homework3" /><br />
+            <label for="homework4"
+              >팀과제를 주로 수행하는데 팀원들이 같이 하지 않는다</label
+            >
+            <input type="checkbox" id="homework4" /><br />
+            <label for="homework5"
+              >과제 수행 전 사전조사를 하는 시간이 너무 길다</label
+            >
+            <input type="checkbox" id="homework5" />
+          </div>
+        </div>
+        <div class="questbox">
+          <div class="questtext">
+            수업시간 혹은 수업시간 이후 교수님에게 질문을 했을때 친절하게 대답
+            해주시나요 <br />
+          </div>
+          <div class="answertext">
+            <label for="kind1">매우 불친절함</label>
+            <input type="radio" id="kind1" name="radio" />
+            <label for="kind2">불친절함</label>
+            <input type="radio" id="kind2" name="radio" />
+            <label for="kind3">평범함</label>
+            <input type="radio" id="kind3" name="radio" />
+            <label for="kind4">친절함</label>
+            <input type="radio" id="kind4" name="radio" />
+            <label for="kind5">매우 친절함</label>
+            <input type="radio" id="kind5" name="radio" />
+          </div>
+        </div>
+        <div class="questbox">
+          <div class="questtext">
+            수업에 대한 추가 건의사항 및 적어주세요<br />
+          </div>
+          <div class="answertext">
+            <textarea
+              style="
+                width: 500px;
+                height: 300px;
+                resize: none;
+                font-size: 16px;
+                font-weight: 600;
+              "
+            ></textarea>
+          </div>
+        </div>
+        <button
+          style="height: 50px; width: 200px; font-size: 32px; font-weight: 600"
+          type="submit"
+        >
+          제 출
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

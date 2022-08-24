@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 20;
+  padding: 0;
+  text-align: center;
+}
+
+.topbox {
+  width: 1000px;
+  border: 4px solid black;
+  background-color: rgb(247, 236, 247);
+  margin: auto;
+}
+
+.questbox {
+  width: 920px;
+  border: 2px solid black;
+  margin: 40px;
+  background-color: white;
+}
+
+.questtext {
+  width: 900px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.answertext {
+  width: 900px;
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.answertext > input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+/*
+ 일정 하위 클래스 밑에 한꺼번에 설정 하고싶으면 이렇게 하면된다.
+ answertext 밑에 <input type="radio"> 라는 전체 크기를 조절하는것.
+
+ input[type="radio"] {
+  width: 20px;
+  height: 20px;
+} 내가 적용시키는 상황은 이렇게 해도 같음
+ */
+
+.answertext > input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.barsize {
+  height: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
